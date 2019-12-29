@@ -12,7 +12,7 @@ import {
   Layer2Screen3
 } from 'src/app/components/layer-2';
 
-export const CreatePage: React.FC = () => {
+export const Postcard: React.FC = () => {
   return (
     <>
       <Snowflakes />

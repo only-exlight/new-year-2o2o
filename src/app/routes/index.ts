@@ -1,20 +1,20 @@
 import { IRoute } from '@app/interfaces';
-import { CreatePage, CreatePostcard } from '@app/pages/';
+import { Postcard, CreatePostcard } from '@app/pages/';
 import { DonatePage } from '@app/pages/donate';
 
 export const POSTCARD: IRoute = {
-  component: CreatePostcard,
-  path: '/:id'
+  component: Postcard,
+  path: '/:id',
 };
 
 export const CREATE_POSTCARD: IRoute = {
-  component: CreatePage,
-  path: '/create'
+  component: CreatePostcard,
+  path: '/create',
 };
 
 export const DONATE: IRoute = {
   component: DonatePage,
-  path: '/donate'
+  path: '/donate',
 };
 
-export const ROUTES: IRoute[] = [POSTCARD, CREATE_POSTCARD, DONATE];
+export const ROUTES: IRoute[] = [CREATE_POSTCARD, DONATE, POSTCARD];
