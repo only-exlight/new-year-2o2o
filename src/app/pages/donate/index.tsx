@@ -1,12 +1,19 @@
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
+import { useRouteMatch } from 'react-router';
 
 export const DonatePage: React.FC = () => {
+  const match: any = useRouteMatch();
+
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
-      <div className="d-flex flex-column justify-content-center qr-wrapper">
+    <div className="container d-flex justify-content-center align-items-center">
+      <div className="d-flex flex-column justify-content-center qr-wrapper my-4">
         <div className="text-center text-primary mb-4">
           <h1>Счастливого нового года!</h1>
+          <div>
+            Ваше поздравление доспно по адресу:{' '}
+            <a href={`${location.hostname}/${match.params.id}`}>{`${location.hostname}/${match.params.id}`}</a>
+          </div>
           <div>Если вам понравилась идея или вы хотите поддержать автора перечислите любую сумму</div>
         </div>
         <div className="d-flex justify-content-center">
@@ -24,8 +31,12 @@ export const DonatePage: React.FC = () => {
         </div>
         <div className="text-center text-primary mt-4">
           <span>
-            Пишите ваши предложения и пожелания на{' '}
-            <a href="mailto:only-exlight@gmail.com">only-exlight@gmail.com</a>
+            Пишите ваши предложения и пожелания на <a href="mailto:only-exlight@gmail.com">only-exlight@gmail.com</a>
+          </span>
+        </div>
+        <div className="text-center text-primary mt-4">
+          <span>
+            <a href="/create">Создать еще?</a>
           </span>
         </div>
       </div>
