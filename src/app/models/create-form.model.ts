@@ -12,6 +12,4 @@ export class CreateFormModel implements ICreateForm {
     public screen_2_sticker_4: string;
     public screen_2_text: string;
     public your_name: string;
-
-
 }
