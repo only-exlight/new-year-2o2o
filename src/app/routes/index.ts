@@ -14,7 +14,7 @@ export const CREATE_POSTCARD: IRoute = {
 
 export const DONATE: IRoute = {
   component: DonatePage,
-  path: '/donate',
+  path: '/donate/:id',
 };
 
 export const ROUTES: IRoute[] = [CREATE_POSTCARD, DONATE, POSTCARD];

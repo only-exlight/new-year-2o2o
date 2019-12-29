@@ -1,6 +1,6 @@
 export interface IRoute {
-    path: string;
-    component: any;
+  path: string;
+  component: any;
 }
 
 export interface ICreateForm {
@@ -15,5 +15,6 @@ export interface ICreateForm {
   screen_2_sticker_4: string;
   screen_2_text: string;
   your_name: string;
+  url: string;
   [field: string]: string;
 }

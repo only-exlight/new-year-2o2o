@@ -93,6 +93,13 @@ export const CreateForm: React.FC<ICreateForm> = ({ onCreate, onMofifyField, for
           value={form.your_name}
           onChange={(e: any) => onMofifyField('your_name', e.target.value)}
         />
+        <Form.Label className="text-primary">URL:</Form.Label>
+        <Form.Control
+          type="text"
+          placeholder="URL"
+          value={form.url}
+          onChange={(e: any) => onMofifyField('url', e.target.value)}
+        />
         <div className="mt-4">
           <Button variant="outline-primary" onClick={onCreate}>
             Создать поздравление
