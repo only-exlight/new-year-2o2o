@@ -65,7 +65,9 @@ export class CreateFormModel implements ICreateForm {
     };
   }
 
-  public validate(path: string) {
-    return this.schema.validateSyncAt(path, this.toJSON());
+  public validate() {
+    return this.schema.validate(this.toJSON(), {
+      abortEarly: false,
+    });
   }
 }

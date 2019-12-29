@@ -3,6 +3,9 @@ import { ICreateForm } from '@app/interfaces';
 export async function createPostcard(body: ICreateForm): Promise<Response> {
   return fetch('http://localhost:3000/postcard', {
     body: JSON.stringify(body),
+    headers: {
+      'Content-Type': 'application/json',
+    },
     method: 'POST',
   });
 }
