@@ -12,7 +12,10 @@ export const DonatePage: React.FC = () => {
           <h1>Счастливого нового года!</h1>
           <div>
             Ваше поздравление доспно по адресу:{' '}
-            <a href={`${location.hostname}/${match.params.id}`}>{`${location.hostname}/${match.params.id}`}</a>
+            <a
+              href={`${location.protocol}//${location.host}/${match.params.id}`}
+              target="_blank"
+            >{`${location.protocol}//${location.host}/${match.params.id}`}</a>
           </div>
           <div>Если вам понравилась идея или вы хотите поддержать автора перечислите любую сумму</div>
         </div>

@@ -13,33 +13,35 @@ export const Preview: React.FC<IPreview> = ({ form }) => {
   return (
     <div className="device device-macbook device-spacegray">
       <div className="text-center">
-        <h1 className="my-4">Предпросмотр поздравления:</h1>
+        <h1 className="text-white my-4">Предпросмотр поздравления:</h1>
       </div>
       <div className="device-frame">
         <div className="preview-container">
           <div>
-            <Snowflakes />
-            <Parallax pages={2.3} scrolling={true} horizontal={false}>
-              <ParallaxLayer offset={0} speed={0.8}>
-                <Layer1Screen1 name={form.recipient} />
-                <Layer1Screen2 congratulation={form.screen_2_text} />
-                <Layer1Screen3 name={form.recipient} />
-              </ParallaxLayer>
-              <ParallaxLayer offset={0} speed={0.5}>
-                <Layer2Screen1
-                  sticker1={form.screen_1_sticker_1}
-                  sticker2={form.screen_1_sticker_2}
-                  sticker3={form.screen_1_sticker_3}
-                />
-                <Layer2Screen2
-                  sticker1={form.screen_2_sticker_1}
-                  sticker2={form.screen_2_sticker_2}
-                  sticker3={form.screen_2_sticker_3}
-                  sticker4={form.screen_2_sticker_4}
-                />
-                <Layer2Screen3 text={form.your_name} />
-              </ParallaxLayer>
-            </Parallax>
+            <div className="scale">
+              <Snowflakes />
+              <Parallax pages={2.3} scrolling={true} horizontal={false}>
+                <ParallaxLayer offset={0} speed={0.8}>
+                  <Layer1Screen1 name={form.recipient} />
+                  <Layer1Screen2 congratulation={form.screen_2_text} />
+                  <Layer1Screen3 name={form.recipient} />
+                </ParallaxLayer>
+                <ParallaxLayer offset={0} speed={0.5}>
+                  <Layer2Screen1
+                    sticker1={form.screen_1_sticker_1}
+                    sticker2={form.screen_1_sticker_2}
+                    sticker3={form.screen_1_sticker_3}
+                  />
+                  <Layer2Screen2
+                    sticker1={form.screen_2_sticker_1}
+                    sticker2={form.screen_2_sticker_2}
+                    sticker3={form.screen_2_sticker_3}
+                    sticker4={form.screen_2_sticker_4}
+                  />
+                  <Layer2Screen3 text={form.your_name} />
+                </ParallaxLayer>
+              </Parallax>
+            </div>
           </div>
         </div>
       </div>

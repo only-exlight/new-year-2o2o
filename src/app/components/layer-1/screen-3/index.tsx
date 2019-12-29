@@ -10,7 +10,7 @@ export const Layer1Screen3: React.FC<IScreen_1_3> = ({ name }) => {
       <div className="container">
         <div className="container">
           <div className="row h-100 align-items-center">
-            <div className="col-12 text-center" style={{ marginTop: '32rem' }}>
+            <div className="col-12 text-center" style={{ marginTop: '20rem' }}>
               <h1>{name}, до Нового года осталось:</h1>
             </div>
           </div>

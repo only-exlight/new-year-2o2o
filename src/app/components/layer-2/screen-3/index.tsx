@@ -14,9 +14,9 @@ export const Layer2Screen3: React.FC<IScreen_2_3> = ({ text }) => {
           <div className="col-12 text-center h1">
             <div className="timer">
               <Timer />
-              <h1 style={{ marginTop: '3rem' }}>{text}</h1>
+              <h1>{text}</h1>
               <a href="/create">
-                <Button>Создать свое поздравление друзьям</Button>
+                <Button variant="outline-primary">Создать поздравление друзьям</Button>
               </a>
             </div>
           </div>
