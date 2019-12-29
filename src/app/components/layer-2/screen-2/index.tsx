@@ -3,7 +3,14 @@ import { randomInteger } from "@app/functions";
 import Sticker from "@app/components/sticker";
 import { COLORS } from "@app/consts";
 
-export const Layer2Screen2: React.FC = () => {
+interface IScreen_2_2 {
+  sticker1: string;
+  sticker2: string;
+  sticker3: string;
+  sticker4: string;
+}
+
+export const Layer2Screen2: React.FC<IScreen_2_2> = ({sticker1, sticker2, sticker3, sticker4}) => {
   return (
     <div className="screen">
       <div className="container">
@@ -13,27 +20,25 @@ export const Layer2Screen2: React.FC = () => {
               color={COLORS[randomInteger(0, 25)]}
               rotate={randomInteger(-15, 15)}
             >
-              Пускай исполнятся сегодня Твои заветные мечты. Удачи, счастья и
-              здоровья, Любви, надежды, красоты!
+              {sticker1}
             </Sticker>
             <Sticker
               color={COLORS[randomInteger(0, 25)]}
               rotate={randomInteger(-15, 15)}
             >
-              С днем рождения, дорогая. Будь счастливой каждый день. Пусть
-              удача, мир, достаток За тобой идут как тень.
+              {sticker2}
             </Sticker>
             <Sticker
               color={COLORS[randomInteger(0, 25)]}
               rotate={randomInteger(-15, 15)}
             >
-              Хорошей и расцветай. Ты — звезда, одна такая, Никогда не забывай.
+              {sticker3}
             </Sticker>
             <Sticker
               color={COLORS[randomInteger(0, 25)]}
               rotate={randomInteger(-15, 15)}
             >
-              Hello world
+              {sticker4}
             </Sticker>
           </div>
         </div>

@@ -1,0 +1,14 @@
+.preview-container {
+  background-image: url("/build/fon2.jpg");
+  background-size: cover;
+  min-height: 576px;
+}
+
+.device-frame {
+  overflow: hidden;
+}
+
+.device {
+  position: sticky;
+  top: calc(50% - 214px); // 214
+}
