@@ -1,7 +1,7 @@
-import * as React from "react";
-import Sticker from "@app/components/sticker";
-import { randomInteger } from "@app/functions";
-import { COLORS } from "src/app/consts";
+import * as React from 'react';
+import Sticker from '@app/components/sticker';
+import { randomInteger } from '@app/functions';
+import { COLORS } from 'src/app/consts';
 
 interface IScreen_2_1 {
   sticker1: string;

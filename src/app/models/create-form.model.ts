@@ -1,4 +1,4 @@
-import { ICreateForm } from "@app/interfaces";
+import { ICreateForm } from '@app/interfaces';
 
 export class CreateFormModel implements ICreateForm {
     public recipient: string;

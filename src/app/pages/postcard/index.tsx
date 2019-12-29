@@ -1,16 +1,16 @@
-import * as React from "react";
-import { Snowflakes } from "@app/components/snowflakes";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
+import * as React from 'react';
+import { Snowflakes } from '@app/components/snowflakes';
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import {
   Layer1Screen1,
   Layer1Screen2,
   Layer1Screen3
-} from "src/app/components/layer-1";
+} from 'src/app/components/layer-1';
 import {
   Layer2Screen2,
   Layer2Screen1,
   Layer2Screen3
-} from "src/app/components/layer-2";
+} from 'src/app/components/layer-2';
 
 export const CreatePage: React.FC = () => {
   return (
