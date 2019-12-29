@@ -22,6 +22,12 @@ export const DonatePage: React.FC = () => {
         <div className="text-center text-primary mt-4">
           <span>Нажимая на кнопку "Поддержать автора" Вы будете перенаправлены на страницу сбора средств</span>
         </div>
+        <div className="text-center text-primary mt-4">
+          <span>
+            Пишите ваши предложения и пожелания на{' '}
+            <a href="mailto:only-exlight@gmail.com">only-exlight@gmail.com</a>
+          </span>
+        </div>
       </div>
     </div>
   );
