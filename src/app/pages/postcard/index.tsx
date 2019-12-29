@@ -23,7 +23,12 @@ export const Postcard: React.FC = () => {
   return (
     <>
       {isLoad ? (
-        <Spinner animation="border" variant="primary" />
+        <div className="d-flex vh-100 align-items-center justify-content-center">
+          <div className="mr-4">
+            <h1>Загружаем...</h1>
+          </div>
+          <Spinner animation="border" variant="primary" />
+        </div>
       ) : (
         <>
           <Snowflakes />
