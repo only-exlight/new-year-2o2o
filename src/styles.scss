@@ -49,6 +49,7 @@ body {
   background: url("/build/fon2.jpg");
   background-size: cover;
   min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .screen {
@@ -85,3 +86,4 @@ h2 {
 @import "app/components/preview/index.scss";
 @import "app/pages/donate/index.scss";
 @import "app/pages/create//index.scss";
+@import "app/components/layer-2/screen-3/index.scss";
