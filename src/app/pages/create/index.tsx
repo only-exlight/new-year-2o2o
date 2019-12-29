@@ -9,7 +9,7 @@ export const CreatePostcard: React.FC = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-4 ">
+        <div className="col-4 form-container">
           <CreateForm />
         </div>
         <div className="align-items-cetner">
