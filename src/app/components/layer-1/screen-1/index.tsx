@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface IScreen_1_1 {
   name: string;

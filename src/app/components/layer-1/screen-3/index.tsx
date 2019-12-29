@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 export const Layer1Screen3: React.FC = () => {
   return (
@@ -6,7 +6,7 @@ export const Layer1Screen3: React.FC = () => {
       <div className="container">
         <div className="container">
           <div className="row h-100 align-items-center">
-            <div className="col-12 text-center" style={{ marginTop: "20rem" }}>
+            <div className="col-12 text-center" style={{ marginTop: '20rem' }}>
               <h1>До Нового года осталось:</h1>
             </div>
           </div>
