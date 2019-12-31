@@ -30,3 +30,4 @@ export const COLORS: string[] = [
 export const DAY = 24;
 export const MINUT = 60;
 export const S = 1000;
+export const API_HOST = 'https://new-year-2o2o-server.herokuapp.com';
