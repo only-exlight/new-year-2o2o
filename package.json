@@ -1,13 +1,14 @@
 {
-  "name": "happy-berthday",
+  "name": "new-year-2o2o",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "TS_NODE_PROJECT=\"webpack/webpack-tsconfig.json\" webpack-dev-server --config webpack.config.ts --open --mode development",
+    "start": "serve -s build",
+    "start:dev": "TS_NODE_PROJECT=\"webpack/webpack-tsconfig.json\" webpack-dev-server --config webpack.config.ts --open --mode development",
     "build": "TS_NODE_PROJECT=\"webpack/webpack-tsconfig.json\" webpack --config webpack.config.ts --mode production"
   },
-  "author": "",
+  "author": "exlight",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -19,6 +20,7 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-spring": "^8.0.27",
+    "serve": "^11.3.0",
     "yup": "^0.28.0"
   },
   "devDependencies": {
