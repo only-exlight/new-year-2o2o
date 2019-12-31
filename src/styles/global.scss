@@ -1,0 +1,39 @@
+
+.container {
+  height: 100%;
+}
+
+body {
+  background: url("/assets/fon.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.screen {
+  height: 100vh;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: "Bad Script", cursive;
+  color: #0581e8;
+  font-size: 3.5rem;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 0 10px #fff;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #5e5e5e;
+}

@@ -21,7 +21,7 @@ export const DonatePage: React.FC = () => {
         </div>
         <div className="d-flex justify-content-center">
           <div className="qr-code">
-            <img src="/build/donate.png" alt="" />
+            <img src="/assets/donate.png" alt="" />
           </div>
         </div>
         <div className="d-flex justify-content-center mt-4">

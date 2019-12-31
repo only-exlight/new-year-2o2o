@@ -2,8 +2,6 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-@import "~devices.css/dist/devices.min.css";
-
 /* Optional modules */
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -39,49 +37,15 @@
 @import "~bootstrap/scss/spinners";
 @import "~bootstrap/scss/utilities";
 
+// Google fonts
 @import url("https://fonts.googleapis.com/css?family=Bad+Script&display=swap");
-
-.container {
-  height: 100%;
-}
-
-body {
-  background: url("/build/fon2.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  background-attachment: fixed;
-}
-
-.screen {
-  height: 100vh;
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-.h1,
-.h2,
-.h3 {
-  font-family: "Bad Script", cursive;
-  color: #0581e8;
-  font-size: 3.5rem;
-  margin: 0 0 0.5rem 0;
-  text-shadow: 0 0 10px #fff;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: #5e5e5e;
-}
-
-@import "app/components/sticker/index.scss";
 @import url("https://fonts.googleapis.com/css?family=Arsenal:400,700,700i|Caveat&display=swap");
+
+// Devices
+@import "~devices.css/dist/devices.min.css";
+
+@import "styles/global.scss";
+@import "app/components/sticker/index.scss";
 @import "app/components/snowflakes/index.scss";
 @import "app/components/preview/index.scss";
 @import "app/pages/donate/index.scss";
